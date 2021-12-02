@@ -12,7 +12,7 @@ func TestIsMetric(t *testing.T) {
 		`http_requests_total{method="post",code="400"}    3 1395066363000`,
 		``,
 		`# Escaping in label values:`,
-		`msdos_file_access_time_seconds{path="C:\\DIR\\FILE.TXT",error="Cannot find file:\n\"FILE.TXT\""} 1.458255915e9`,
+		`msdos_file_access_time_seconds{path="C:/DIR/FILE.TXT",error="Cannot find file:\n\"FILE.TXT\""} 1.458255915e9`,
 		``,
 		`# Minimalistic line:`,
 		`metric_without_timestamp_and_labels 12.47`,
@@ -58,8 +58,8 @@ func TestGetScriptsList(t *testing.T) {
 	}
 
 	want := []string{
-		"..\\test_files\\test1.sh",
-		"..\\test_files\\test2.sh",
+		"../test_files/test1.sh",
+		"../test_files/test2.sh",
 	}
 	if !Equal(list, want) {
 		t.Errorf("result '%v', want '%v'", list, want)
@@ -67,7 +67,7 @@ func TestGetScriptsList(t *testing.T) {
 }
 
 func TestRunShellCommand(t *testing.T) {
-	result, err := RunShellCommand("..\\test_files\\test1.sh")
+	result, err := RunShellCommand("../test_files/test1.sh")
 	if err != nil {
 		t.Errorf("function fail with error '%v'", err)
 	}
@@ -77,6 +77,7 @@ func TestRunShellCommand(t *testing.T) {
 		"RESULT2",
 		"RESULT3",
 		"RESULT4",
+        "",
 	}
 	if !Equal(result, want) {
 		t.Errorf("result '%v', want '%v'", result, want)
