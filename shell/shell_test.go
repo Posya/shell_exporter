@@ -52,14 +52,14 @@ func TestIsMetric(t *testing.T) {
 }
 
 func TestGetScriptsList(t *testing.T) {
-	list, err := GetScriptsList("../test_files")
+	list, err := GetScriptsList("test_files")
 	if err != nil {
 		t.Errorf("function fail with error '%v'", err)
 	}
 
 	want := []string{
-		"../test_files/test1.sh",
-		"../test_files/test2.sh",
+		"test_files/test1.sh",
+		"test_files/test2.sh",
 	}
 	if !Equal(list, want) {
 		t.Errorf("result '%v', want '%v'", list, want)
@@ -67,7 +67,7 @@ func TestGetScriptsList(t *testing.T) {
 }
 
 func TestRunShellCommand(t *testing.T) {
-	result, err := RunShellCommand("../test_files/test1.sh")
+	result, err := RunShellCommand("test_files/test1.sh")
 	if err != nil {
 		t.Errorf("function fail with error '%v'", err)
 	}
@@ -77,7 +77,7 @@ func TestRunShellCommand(t *testing.T) {
 		"RESULT2",
 		"RESULT3",
 		"RESULT4",
-        "",
+		"",
 	}
 	if !Equal(result, want) {
 		t.Errorf("result '%v', want '%v'", result, want)
