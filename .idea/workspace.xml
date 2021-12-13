@@ -4,26 +4,25 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1cef1b89-6f30-4194-add6-4ab087441f61" name="Changes" comment="Add shell module">
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shell_exporter.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shell_exporter.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/watcherTasks.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" afterDir="false" />
+    <list default="true" id="1cef1b89-6f30-4194-add6-4ab087441f61" name="Changes" comment="Fix testes">
+      <change afterPath="$PROJECT_DIR$/main_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shell_exporter" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_files/test2.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/util/util.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/executor/executor.go" beforeDir="false" afterPath="$PROJECT_DIR$/executor/executor.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/executor/executor_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/executor/executor_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/shell/shell.go" beforeDir="false" afterPath="$PROJECT_DIR$/shell/shell.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/shell/shell_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/shell/shell_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_files/test1.sh" beforeDir="false" afterPath="$PROJECT_DIR$/test_files/test1.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_files/test2.sh" beforeDir="false" afterPath="$PROJECT_DIR$/test_files/test2.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shell/test_files/test1.sh" beforeDir="false" afterPath="$PROJECT_DIR$/test_files/test1.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shell/test_files/test2.sh" beforeDir="false" afterPath="$PROJECT_DIR$/test_files/err_test.sh" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CoverageOptionsProvider">
+    <option name="myAddOrReplace" value="0" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -32,7 +31,7 @@
       </list>
     </option>
   </component>
-  <component name="GOROOT" url="file://$PROJECT_DIR$/../../go1.17.3" />
+  <component name="GOROOT" url="file:///usr/local/opt/go/libexec" />
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -46,6 +45,14 @@
   </component>
   <component name="GoLibraries">
     <option name="indexEntireGoPath" value="false" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/main_test.go" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/shell/shell_test.go" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/util/util.go" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="21gnkYtrRkCWeNN7O8tsGoUksts" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -61,18 +68,26 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="go.format.on.save.advertiser.fired" value="true" />
     <property name="go.formatter.settings.were.checked" value="true" />
     <property name="go.import.settings.migrated" value="true" />
     <property name="go.modules.go.list.on.any.changes.was.set" value="true" />
     <property name="go.sdk.automatically.set" value="true" />
+    <property name="go.watchers.conflict.with.on.save.actions.check.performed" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="settings.editor.selected.configurable" value="reference.settings.ide.settings.notifications" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
-  <component name="RunManager" selected="Go Test.TestRunShellCommand in shell_exporter/shell">
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/shell" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Go Test.go test shell_exporter">
     <configuration default="true" type="GoApplicationRunConfiguration" factoryName="Go Application">
       <module name="shell_exporter" />
       <working_directory value="$PROJECT_DIR$" />
@@ -83,40 +98,15 @@
       <filePath value="$PROJECT_DIR$" />
       <method v="2" />
     </configuration>
-    <configuration name="TestExecutor in shell_exporter/executor" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+    <configuration name="TestGetMetrics in shell_exporter" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="shell_exporter" />
-      <working_directory value="$PROJECT_DIR$/executor" />
-      <root_directory value="$PROJECT_DIR$" />
+      <working_directory value="$PROJECT_DIR$" />
       <kind value="PACKAGE" />
-      <package value="shell_exporter/executor" />
+      <package value="shell_exporter" />
       <directory value="$PROJECT_DIR$" />
       <filePath value="$PROJECT_DIR$" />
       <framework value="gotest" />
-      <pattern value="^\QTestExecutor\E$" />
-      <method v="2" />
-    </configuration>
-    <configuration name="TestGetScriptsList in shell_exporter/shell" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
-      <module name="shell_exporter" />
-      <working_directory value="$PROJECT_DIR$/shell" />
-      <root_directory value="$PROJECT_DIR$" />
-      <kind value="PACKAGE" />
-      <package value="shell_exporter/shell" />
-      <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$" />
-      <framework value="gotest" />
-      <pattern value="^\QTestGetScriptsList\E$" />
-      <method v="2" />
-    </configuration>
-    <configuration name="TestIsMetric in shell_exporter/shell" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
-      <module name="shell_exporter" />
-      <working_directory value="$PROJECT_DIR$/shell" />
-      <root_directory value="$PROJECT_DIR$" />
-      <kind value="PACKAGE" />
-      <package value="shell_exporter/shell" />
-      <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$" />
-      <framework value="gotest" />
-      <pattern value="^\QTestIsMetric\E$" />
+      <pattern value="^\QTestGetMetrics\E$" />
       <method v="2" />
     </configuration>
     <configuration name="TestRunShellCommand in shell_exporter/shell" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
@@ -142,12 +132,45 @@
       <framework value="gotest" />
       <method v="2" />
     </configuration>
+    <configuration name="go test shell_exporter" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="shell_exporter" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <package value="shell_exporter" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <framework value="gotest" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go test shell_exporter/executor" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="shell_exporter" />
+      <working_directory value="$PROJECT_DIR$/executor" />
+      <root_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <package value="shell_exporter/executor" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <framework value="gotest" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go test shell_exporter/shell" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="shell_exporter" />
+      <working_directory value="$PROJECT_DIR$/shell" />
+      <root_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <package value="shell_exporter/shell" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <framework value="gotest" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Test.go test shell_exporter" />
         <item itemvalue="Go Test.TestRunShellCommand in shell_exporter/shell" />
-        <item itemvalue="Go Test.TestGetScriptsList in shell_exporter/shell" />
-        <item itemvalue="Go Test.TestIsMetric in shell_exporter/shell" />
-        <item itemvalue="Go Test.TestExecutor in shell_exporter/executor" />
+        <item itemvalue="Go Test.go test shell_exporter/executor" />
+        <item itemvalue="Go Test.go test shell_exporter/shell" />
+        <item itemvalue="Go Test.TestGetMetrics in shell_exporter" />
       </list>
     </recent_temporary>
   </component>
@@ -165,15 +188,20 @@
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Complete executor package" />
     <MESSAGE value="Add shell module" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add shell module" />
+    <MESSAGE value="Fix testes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix testes" />
   </component>
   <component name="VgoProject">
     <integration-enabled>true</integration-enabled>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/shell_exporter$go_test_shell_exporter_executor.out" NAME="go test shell_exporter/executor Coverage Results" MODIFIED="1639409083478" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="GoCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/shell_exporter$go_test_shell_exporter.out" NAME="go test shell_exporter Coverage Results" MODIFIED="1639409300972" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="GoCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/shell_exporter$go_test_shell_exporter_shell.out" NAME="go test shell_exporter/shell Coverage Results" MODIFIED="1639403754293" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="GoCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>

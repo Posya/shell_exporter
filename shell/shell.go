@@ -4,21 +4,29 @@ import (
 	"os/exec"
 	"path/filepath"
 	"regexp"
+	"shell_exporter/util"
 	"strings"
 )
 
 var (
-	reMetric = regexp.MustCompile(`^\w+({.*})?(\s+\S+)?(\s+\S+)$|^#.*$|^\s*$`)
+	reMetric = regexp.MustCompile(`^[\w_-]+ *({[^}]*})? +([\d.-]+ +|[+-]Inf +)?[\d.-]+(e[+-]?\d+)?$|^#.*$`)
 )
 
 func RunShellCommand(filename string) ([]string, error) {
+	checkMetricsAndTrim := func(l string) string {
+		if IsMetric(l) {
+			return strings.TrimSpace(l)
+		}
+		return ""
+	}
+
 	cmd := exec.Command("/bin/bash", filename)
 	out, err := cmd.Output()
 	if err != nil {
 		return []string{}, err
 	}
 	lines := strings.Split(string(out), string('\n'))
-	return lines, nil
+	return util.FilterSlice(lines, checkMetricsAndTrim), nil
 }
 
 func IsMetric(l string) bool {
